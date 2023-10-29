@@ -6,7 +6,7 @@
   padding: 0 $sw-margin 0 ($sw-margin + $sw-margin-sm);
 
   h3 {
-    margin-left: -$sw-margin-sm;
+    margin: 0 0 $sw-margin-sm 0 -$sw-margin-sm;
   }
 
   ul {
