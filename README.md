@@ -1,6 +1,6 @@
 # About
 
-`SW BaseExp` is learning project. It use fine https://swapi.info/ (in the place of a little slower https://swapi.dev/)
+`SW BaseExp` is learning project. It uses fine https://swapi.info/ (in the place of a little slow https://swapi.dev/)
 
 # TODO in the my spare time:
 - add vitest and tests
