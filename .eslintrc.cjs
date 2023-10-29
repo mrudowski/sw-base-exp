@@ -13,10 +13,8 @@ module.exports = {
     // 'plugin:@typescript-eslint/recommended-type-checked', // recommended
     'plugin:react-hooks/recommended',
     // 'plugin:@typescript-eslint/stylistic-type-checked', // Optionally
-
     'plugin:import/recommended',
     'plugin:import/typescript',
-
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     // 'plugin:testing-library/recommended',

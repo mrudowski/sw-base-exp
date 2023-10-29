@@ -1,4 +1,4 @@
-import './index.css';
+import './styles/index.scss';
 import './i18n/i18n';
 
 import {QueryClientProvider} from '@tanstack/react-query';

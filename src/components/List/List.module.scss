@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+
+$gap: $sw-margin;
+
+.list {
+  display: grid;
+  gap: $gap;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.listItem {
+  //width: 100%;
+  padding: $sw-margin;
+  border: 1px solid rgba($sw-color-yellow, 0.75);
+  display: flex;
+  gap: $sw-margin;
+  overflow: hidden;
+
+  @media (min-width: $sw-media-min-width) {
+    // width: calc(25% - ($gap * 3/4));
+    flex: 1 1 calc(25% - ($gap * 3/4));
+  }
+
+  span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &:hover {
+    border: 1px solid $sw-color-yellow
+  }
+}

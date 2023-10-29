@@ -2,6 +2,7 @@ import {useTranslation} from 'react-i18next';
 import {useParams} from 'react-router-dom';
 
 import ConnectedThings from '../../components/ConnectedThings/ConnectedThings.tsx';
+import PageLoading from '../../components/PageLoading/PageLoading.tsx';
 import {ROUTES} from '../../router/ROUTES.ts';
 import {DetailPageParams} from '../../router/types.ts';
 import {SW_API_URLS} from '../../services/swApi/constants.ts';
@@ -19,7 +20,7 @@ const Character = () => {
 
   // thanks to react router loader it won't happen
   if (!character) {
-    return t('utils.loading');
+    return <PageLoading />;
   }
 
   return (

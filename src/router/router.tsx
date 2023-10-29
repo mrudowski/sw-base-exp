@@ -1,4 +1,4 @@
-import '../index.css';
+import '../styles/index.scss';
 
 import {QueryClient} from '@tanstack/react-query';
 import {createBrowserRouter, Navigate} from 'react-router-dom';
@@ -6,7 +6,7 @@ import {createBrowserRouter, Navigate} from 'react-router-dom';
 import Character from '../routes/character/Character.tsx';
 import Characters from '../routes/characters/Characters.tsx';
 import ErrorPage from '../routes/ErrorPage.tsx';
-import Layout from '../routes/Layout.tsx';
+import Layout from '../routes/layout/Layout.tsx';
 import {SW_API_URLS} from '../services/swApi/constants.ts';
 import {listLoader, thingLoader} from '../services/swApi/loaders/loaders.ts';
 import {DEFAULT_ROUTE, DETAILS_ROUTES, ROUTES} from './ROUTES.ts';
