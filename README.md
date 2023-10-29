@@ -28,7 +28,31 @@ If you are developing a production application, we recommend updating the config
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
 
+### Environment requirements
+
+- `node` version 18.17.1
+- `npm` version 9.6.7
+- `yarn` version 1.22.19
+
+# System requirements
+
+- node 16.13.1
+    - best with windows version switcher: https://github.com/coreybutler/nvm-windows
+    - mac/linux: https://github.com/nvm-sh/nvm
+  ```
+  nvm install 16.13.1
+  nvm use 16.13.1
+  ```
+- yarn 1.22.19 or some later classic version (https://classic.yarnpkg.com/en/docs/install)
+  ```
+  npm install --global yarn
+  ```
+  
 # Run 
+
+yarn && yarn start
+
+
 
 ```
 yarn dev
@@ -41,3 +65,7 @@ yarn dev
 yarn audit
 yarn audit --groups dependencies // only in dependencies group
 ```
+
+
+https://swapi.dev/  is slow and neart dead
+I use ...

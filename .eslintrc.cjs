@@ -9,12 +9,13 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    // 'plugin:@typescript-eslint/recommended', replaced by:
-    'plugin:@typescript-eslint/recommended-type-checked',
+    'plugin:@typescript-eslint/recommended',
+    // 'plugin:@typescript-eslint/recommended-type-checked', // recommended
     'plugin:react-hooks/recommended',
     // 'plugin:@typescript-eslint/stylistic-type-checked', // Optionally
-    // 'plugin:import/recommended',
-    // 'plugin:import/typescript',
+
+    'plugin:import/recommended',
+    'plugin:import/typescript',
 
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
