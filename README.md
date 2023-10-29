@@ -1,8 +1,19 @@
 # About
 
-https://swapi.dev/  is slow and neart dead
-I use ...
+`SW BaseExp` is learning project. It use fine https://swapi.info/ (in the place of a little slower https://swapi.dev/)
 
+# TODO in the my spare time:
+- add vitest and tests
+- absolute imports
+- useSuspenseQuery
+- useSuspenseQueries
+- add cancellation https://github.com/sindresorhus/ky#cancellation
+- try zod https://tkdodo.eu/blog/type-safe-react-query#zod
+- use react router outlet context https://reactrouter.com/en/main/hooks/use-outlet-context
+- custom errors status
+- find lint to force sort properties alphabetically in i18n resources
+- packing related utils methods in object before exporting
+- create monorepo when we can test react vs nextjs vs remix solution
 
 # Environment requirements
 

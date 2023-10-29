@@ -13,5 +13,10 @@ $sw-color-orange: #fb8500;
 $sw-margin-sm: 0.5rem;
 $sw-margin: 1rem;
 
+// layout element size
+$sw-aside-size: 240px;
+
+
 // media query break points
-$sw-media-min-width: 480px;
+$sw-media-default-min-width: 480px;
+$sw-media-aside-min-width: 800px;
