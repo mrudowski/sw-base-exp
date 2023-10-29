@@ -15,6 +15,7 @@ const NavItem = ({route}: NavItemProps) => {
     <li>
       <NavLink
         to={route}
+        end={true}
         className={({isActive, isPending}) =>
           classNames(styles.navLink, isActive ? styles.active : isPending ? styles.pending : '')
         }

@@ -2,6 +2,7 @@ import {useTranslation} from 'react-i18next';
 import {useParams} from 'react-router-dom';
 
 import ConnectedThings from '../../components/ConnectedThings/ConnectedThings.tsx';
+import Details from '../../components/Details/Details.tsx';
 import PageLoading from '../../components/PageLoading/PageLoading.tsx';
 import {ROUTES} from '../../router/ROUTES.ts';
 import {DetailPageParams} from '../../router/types.ts';
@@ -24,14 +25,13 @@ const Character = () => {
   }
 
   return (
-    <article>
-      <h2>{character.name}</h2>
+    <Details name={character.name}>
       <p>
         {t('domain.species')}: {character.species.length === 0 ? '–' : <CharacterSpecies urls={character.species} />}
       </p>
       <ConnectedThings title={t('domain.vehicles')} route={ROUTES.vehicles} urlOrUrls={character.vehicles} />
       <ConnectedThings title={t('domain.planets')} route={ROUTES.planets} urlOrUrls={character.homeworld} />
-    </article>
+    </Details>
   );
 };
 

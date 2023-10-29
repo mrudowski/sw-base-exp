@@ -5,6 +5,7 @@ import {RouteId} from '../../router/types.ts';
 import {getIdFromUrl, getThingRoute} from '../../router/utils.ts';
 import useThingsQueries from '../../services/swApi/hooks/useThingsQueries.ts';
 import {SWAbstractThing} from '../../services/swApi/types.ts';
+import styles from './ConnectedThings.module.scss';
 
 type ContentProps = {
   route: RouteId;
@@ -18,7 +19,7 @@ const Content = ({route, things, pending, isSuccess}: ContentProps) => {
     return <>{t('utils.loading')}</>;
   }
   if (isSuccess && things.length === 0) {
-    return <>–</>;
+    return <em>–</em>;
   }
   if (isSuccess) {
     return (
@@ -46,10 +47,10 @@ const ConnectedThings = ({title, route, urlOrUrls}: ConnectedThingsProps) => {
   const {data: things, pending, isSuccess} = useThingsQueries(urlOrUrls);
 
   return (
-    <article>
+    <section className={styles.connectedThings}>
       <h3>{title}</h3>
       <Content route={route} things={things} pending={pending} isSuccess={isSuccess} />
-    </article>
+    </section>
   );
 };
 

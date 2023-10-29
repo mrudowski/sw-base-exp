@@ -1,10 +1,16 @@
+import classNames from 'classnames';
+
 import styles from './Avatar.module.scss';
 
 type AvatarProps = {
-  title: string;
+  name: string;
+  size?: 'sm';
 };
-const Avatar = ({title}: AvatarProps) => {
-  return <span className={styles.avatar}>{title}</span>;
+const Avatar = ({name, size}: AvatarProps) => {
+  const className = classNames(styles.avatar, size === 'sm' && styles.smSize);
+  const firstLetter = name.at(0) || '';
+
+  return <span className={className}>{firstLetter}</span>;
 };
 
 export default Avatar;

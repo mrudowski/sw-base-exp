@@ -20,7 +20,7 @@ const List = ({title, things}: ListProps) => {
           const id = getIdFromUrl(thing.url);
           return (
             <Link key={id} to={getCharacterRoute(id)} className={styles.listItem}>
-              <Avatar title={thing.name.at(0) || ''} />
+              <Avatar name={thing.name} size="sm" />
               <span>{thing.name}</span>
             </Link>
           );
