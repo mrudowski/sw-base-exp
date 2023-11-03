@@ -4,7 +4,7 @@
 
 # TODO in the my spare time:
 > Continued in another project (Nx powered monorepo)
-  https://github.com/mrudowski/nxExp
+  https://github.com/mrudowski/nxExp/tree/main/apps/sw-base
 
 - add vitest and tests
 - ✅ ~~absolute imports~~
