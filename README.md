@@ -3,8 +3,11 @@
 `SW BaseExp` is learning project. It uses fine https://swapi.info/ (in the place of a little slow https://swapi.dev/)
 
 # TODO in the my spare time:
+> Continued in another project (Nx powered monorepo)
+  https://github.com/mrudowski/nxExp
+
 - add vitest and tests
-- absolute imports
+- ✅ ~~absolute imports~~
 - useSuspenseQuery
 - useSuspenseQueries
 - add cancellation https://github.com/sindresorhus/ky#cancellation
@@ -13,7 +16,8 @@
 - custom errors status
 - find lint to force sort properties alphabetically in i18n resources
 - packing related utils methods in object before exporting
-- create monorepo when we can test react vs nextjs vs remix solution
+- create monorepo when we can test react vs nextjs / remix / astro / gatsby solution
+- turn off noImplicitAny
 
 # Environment requirements
 

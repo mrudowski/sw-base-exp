@@ -1,4 +1,5 @@
 import react from '@vitejs/plugin-react-swc';
+import path from 'path';
 import {defineConfig, loadEnv} from 'vite';
 import {checker} from 'vite-plugin-checker';
 
@@ -20,5 +21,9 @@ export default defineConfig(({mode}) => {
           })
         : undefined,
     ],
+    // https://stackoverflow.com/questions/68241263/absolute-path-not-working-in-vite-project-react-ts
+    resolve: {
+      alias: [{find: '@', replacement: path.resolve(__dirname, 'src')}],
+    },
   };
 });

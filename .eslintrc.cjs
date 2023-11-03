@@ -30,6 +30,22 @@ module.exports = {
       { allowConstantExport: true },
     ],
     'simple-import-sort/imports': 'warn',
-    'simple-import-sort/exports': 'warn'
+    'simple-import-sort/exports': 'warn',
+    'import/no-unresolved': 'off',
+  },
+  settings: {
+    'react': {
+      'version': 'detect'
+    },
+    // not working, so I turn off import/no-unresolved
+    // 'import/resolver': {
+    //   'node': {
+    //     'paths': ['@'],
+    //     // 'paths': ['src/', '@/'],
+    //     // paths: [path.resolve(__dirname)],
+    //     // moduleDirectory: ['node_modules', 'src/', '@/', '@'],
+    //     // 'extensions': ['.js', '.jsx', '.ts', '.tsx'],
+    //   }
+    // }
   },
 }
