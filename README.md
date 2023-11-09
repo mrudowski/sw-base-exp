@@ -2,8 +2,9 @@
 
 `SW BaseExp` is learning project. It uses fine https://swapi.info/ (in the place of a little slow https://swapi.dev/)
 
-# TODO in the my spare time:
-> Continued in another project (Nx powered monorepo)
+# TODO in my spare time:
+
+> **Continued in another project** (Nx powered monorepo)
   https://github.com/mrudowski/nxExp/tree/main/apps/sw-base
 
 - add vitest and tests
