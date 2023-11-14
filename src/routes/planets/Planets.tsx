@@ -1,5 +1,7 @@
 import {useTranslation} from 'react-i18next';
 
+import {getPlanetRoute} from '@/router/utils.ts';
+
 import List from '../../components/List/List.tsx';
 import PageLoading from '../../components/PageLoading/PageLoading.tsx';
 import {SW_API_URLS} from '../../services/swApi/constants.ts';
@@ -15,7 +17,7 @@ const Planets = () => {
     return <PageLoading />;
   }
 
-  return <List title={t('domain.planets')} things={planets} />;
+  return <List title={t('domain.planets')} things={planets} getRoute={getPlanetRoute} />;
 };
 
 export default Planets;

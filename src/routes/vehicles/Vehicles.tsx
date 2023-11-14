@@ -1,5 +1,7 @@
 import {useTranslation} from 'react-i18next';
 
+import {getVehicleRoute} from '@/router/utils.ts';
+
 import List from '../../components/List/List.tsx';
 import PageLoading from '../../components/PageLoading/PageLoading.tsx';
 import {SW_API_URLS} from '../../services/swApi/constants.ts';
@@ -15,7 +17,7 @@ const Vehicles = () => {
     return <PageLoading />;
   }
 
-  return <List title={t('domain.vehicles')} things={vehicles} />;
+  return <List title={t('domain.vehicles')} things={vehicles} getRoute={getVehicleRoute} />;
 };
 
 export default Vehicles;

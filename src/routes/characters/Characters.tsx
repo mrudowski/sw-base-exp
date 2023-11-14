@@ -1,5 +1,7 @@
 import {useTranslation} from 'react-i18next';
 
+import {getCharacterRoute} from '@/router/utils.ts';
+
 import List from '../../components/List/List.tsx';
 import PageLoading from '../../components/PageLoading/PageLoading.tsx';
 import {SW_API_URLS} from '../../services/swApi/constants.ts';
@@ -15,7 +17,7 @@ const Characters = () => {
     return <PageLoading />;
   }
 
-  return <List title={t('domain.characters')} things={characters} />;
+  return <List title={t('domain.characters')} things={characters} getRoute={getCharacterRoute} />;
 };
 
 export default Characters;
